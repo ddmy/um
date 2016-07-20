@@ -179,10 +179,11 @@
         var shopJson = {};
         allShop.forEach(function(v,i){
             if(v.className != 'gothis'){
-                shopJson['"' + $(v).attr('data-id') + '"'] = $(v).find('.nums').val();
+                shopJson[ $(v).attr('data-id')] = $(v).find('.nums').val();
             }
         })
+        shopJson = JSON.stringify(shopJson);
         console.log(shopJson);
-        window.location.href = "../user/textOrder.html"
+        //window.location.href = "../user/textOrder.html"
     }
 })()
