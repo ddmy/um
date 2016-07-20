@@ -176,13 +176,13 @@
         //提交订单
         //提交订单
         alert('订单提交成功，总价：'+ countAll());
-        var shopArrr = [];
+        var shopJson = {};
         allShop.forEach(function(v,i){
             if(v.className != 'gothis'){
-                shopArrr.push($(v).attr('data-id'));
+                shopJson['"' + $(v).attr('data-id') + '"'] = $(v).find('.nums').val();
             }
         })
-        console.log(shopArrr.join(','));
+        console.log(shopJson);
         window.location.href = "../user/textOrder.html"
     }
 })()
