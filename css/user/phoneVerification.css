@@ -1,0 +1,16 @@
+.newinv li .text {
+    position: relative;
+}
+
+.newinv li .text a {
+    position: absolute;
+    width: 88px;
+    height: 22px;
+    background-color: #f33;
+    color: #fff;
+    line-height: 22px;
+    text-align: center;
+    right: 0;
+    top: 11px;
+    border-radius: 4px;
+}

@@ -1,0 +1,16 @@
+.swiper-container {
+    height: auto;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.swiper-slide a, .swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.swiper-pagination-bullet-active {
+    width: 16px;
+    background-color: #f66;
+    border-radius: 4px;
+}

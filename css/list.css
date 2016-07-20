@@ -1,0 +1,270 @@
+body{
+    background-color: #f0f0f0;
+}
+.list-header {
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    height: 44px;
+    line-height: 44px;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 2px 2px #f2f2f2;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.login-back {
+    flex: 1;
+}
+
+.login-back i {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 11px 0 11px 15px;
+    background: url("../images/ym-sprites.png") no-repeat;
+    background-size: 512px 1024px;
+    background-position: -52px -444px;
+}
+
+.list-title {
+    flex: 6;
+}
+
+.list-title form {
+    width: 100%;
+    height: 44px;
+    position: relative;
+}
+
+.list-title form input {
+    width: 100%;
+    padding: 0 10px 0 26px;
+    height: 28px;
+    box-sizing: border-box;
+    background-color: #ebebeb;
+    border: none;
+}
+
+.list-title form .mirror {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url("../images/ym-sprites.png") no-repeat 0 -465px;
+    background-size: 512px 1024px;;
+    background-position: -126px -54px;
+    top: 14px;
+    left: 4px;
+}
+
+.list-login {
+    flex: 1;
+}
+
+.list-login span {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 11px auto;
+    background: url("../images/ym-sprites.png") no-repeat 0 -465px;
+    background-size: 512px 1024px;;
+    background-position: 0 -538px;
+}
+
+.list-login-true span{
+    background-position: -47px -538px;
+}
+
+/*商品默认样式*/
+
+.shop {
+    width: 100%;
+    height: auto;
+    margin-top: 44px;
+    overflow: hidden;
+}
+
+.shop > ul > li {
+    width: 100%;
+    background-color: #fff;
+    margin: 5px 0;
+    position: relative;
+}
+
+/*默认样式*/
+
+.shop li .shop-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 157.5px;
+    height: 132px;
+}
+
+.shop li .shop-img img {
+    width: 140px;
+    height: 122px;
+    margin: 5px 10px 5px 7.5px;
+}
+
+.shop li div {
+    width: 100%;
+    height: 132px;
+    padding: 0 10px 0 157.5px;
+    box-sizing: border-box;
+}
+.shop li .shop-name{
+    display: inline-block;
+    width: 100%;
+    max-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    display: box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+}
+.shop li .introduce{
+    height: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 10px 0;
+}
+.shop li .main{
+    margin: 30px 0 10px 0;
+    width: 100%;
+    font-size: 14px;
+    position: relative;
+}
+.shop li .main .price{
+    text-align: left;
+    color: #f33;
+}
+.shop li .main a{
+    color: #333;
+    float: right;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: 5px;
+}
+.shop li .main a i{
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url("../images/ym-sprites.png") no-repeat 0 -465px;
+    background-size: 512px 1024px;
+    background-position: -58px -623px;
+}
+
+
+/*大图模式*/
+.shop li.box{
+    width: 49%;
+    margin: 5px 0px 0px 0px;
+}
+.shop li.box:nth-child(even){
+    float: right;
+}.shop li.box:nth-child(odd){
+     float: left;
+     float: left;
+ }
+.shop li.box .shop-img{
+    position: static;
+    display: block;
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid #f0f0f0;
+    overflow: hidden;
+}
+.shop li.box .shop-img img{
+    margin: 39px auto;
+}
+.shop li.box div{
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+.shop li.box div .shop-name{
+    -webkit-line-clamp: 1;
+    margin: 10px 0 0 0;
+}
+.shop li.box div .main{
+    margin: 0 0 5px 0;
+}
+.shop li.box div .main a{
+    right: 5px;
+}
+
+.shop li.box .introduce{
+    display: none;
+}
+
+
+.add{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-animation: addto 0.5s;
+    -o-animation: addto 0.5s;
+    animation: addto 0.5s;
+}
+
+@keyframes addto {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    25%{
+        -webkit-transform: rotate(-30deg);
+        -moz-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        -o-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+    }
+    50%{
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+    75%{
+        -webkit-transform: rotate(-15deg);
+        -moz-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+        -o-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+    }
+    100%{
+        -webkit-transform: rotate(15deg);
+        -moz-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        -o-transform: rotate(15deg);
+        transform: rotate(15deg);
+    }
+}
+/*返回顶部*/
+.gotop{
+    width: 33px;
+    height: 33px;
+    background: url("../images/ym-sprites.png") no-repeat 0 -465px;
+    background-size: 512px 1024px;
+    background-position: 0 -624px;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    display: none;
+}

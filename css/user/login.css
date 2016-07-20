@@ -1,0 +1,104 @@
+.login-header{
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    display: flex;
+    box-shadow: 0 2px 2px #f2f2f2;
+}
+.login-back{
+    flex: 2;
+}
+.login-back i{
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 11px 0 11px 15px;
+    background: url("../../images/ym-sprites.png") no-repeat;
+    background-size: 512px 1024px;
+    background-position: 0 -444px;
+}
+.login-title{
+    flex: 6;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+.login-login{
+    flex: 2;
+    color: #f33;
+    text-align: center;
+}
+
+/*logo*/
+
+.login-logo{
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+.login-logoon{
+    width: 110px;
+    height: 100px;
+    margin: 60px auto;
+    background: url("../../images/ym-sprites.png") no-repeat;
+    background-size: 512px 1024px;
+    background-position: 0 -319px;
+}
+
+/*µÇÂ¼*/
+
+.login-ok{
+    width: 100%;
+    height: auto;
+}
+
+.login-ok input{
+    display: block;
+    padding: 0 10px 0 20px;
+    color: #333;
+    width: 250px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login-ok div{
+    position: relative;
+    width: 250px;
+    height: 32px;
+    margin: 17px auto;
+
+}
+.login-ok div i{
+    position: absolute;
+    width: 18px;
+    height: 22px;
+    left: 0;
+    top: 5px;
+    background: url("../../images/ym-sprites.png") no-repeat;
+    background-size: 512px 1024px;
+    background-position: 0 -491px;
+}
+
+.login-ok .login-pasd{
+    background-position: -43px -491px;
+}
+
+.login-ok .login-login-ok{
+    display: block;
+    width: 250px;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    color: #fff;
+    background-color: #d33;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.login-ok p{
+    text-align: center;
+}
+.login-ok .login-forget{
+    color: #f60;
+}

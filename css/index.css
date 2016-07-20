@@ -1,0 +1,454 @@
+body {
+    background-color: #f5f5f5;
+}
+
+/*头部样式*/
+.header {
+    max-width: 640px;
+    min-width: 300px;
+    width: 100%;
+    height: 44px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background-color: rgba(221, 51, 51, 0);
+    position: fixed;
+    z-index: 2;
+
+}
+
+.head {
+    width: 100%;
+    height: 44px;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo {
+    display: inline-block;
+    width: 41px;
+    height: 26px;
+    margin: 9px 0;
+    background: url("../images/ym-sprites.png") no-repeat;
+    background-size: 512px 1024px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.search {
+    display: inline-block;
+    width: 100%;
+    height: 44px;
+    margin: 0 0 0 50px;
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+
+.search input {
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 8px auto;
+    padding: 0 6px 0 24px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+/*placeholder颜色设置*/
+
+.search input :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+}
+
+.search input ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #fff;
+}
+
+.search input:-ms-input-placeholder {
+    color: #fff;
+}
+
+.search input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.search .mirror {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url("../images/ym-sprites.png") no-repeat 0 -465px;
+    background-size: 512px 1024px;;
+    background-position: -47px -54px;
+    top: 14px;
+    left: 54px;
+}
+
+.login {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.login .user {
+    width: 22px;
+    height: 22px;
+    margin: 4px auto 0;
+    background: url("../images/ym-sprites.png") no-repeat 0 -51px;
+    background-size: 512px 1024px;;
+}
+
+.login p {
+    color: #fff;
+    text-align: center;
+}
+
+/*主页分类样式*/
+
+.nav {
+    width: 100%;
+    height: 190px;
+    background-color: #f5f5f5;
+}
+
+.nav ul {
+    width: 100%;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav ul li {
+    width: 50px;
+    height: 76px;
+    display: list-item;
+}
+
+.nav ul li a {
+    display: block;
+    width: 22px;
+    height: 22px;
+    padding: 11px 11px;
+    margin: 0 3px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    background-image: url("../images/ym-sprites.png");
+    background-repeat: no-repeat;
+    background-position: 0 -98px;
+    background-origin: content-box;
+    background-size: 512px 1024px;;
+}
+
+.nav ul li p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*优蚂快报*/
+
+.news {
+    width: 100%;
+    height: 44px;
+    background-color: #fff;
+    position: relative;
+}
+
+.news-logo {
+    width: 120px;
+    height: 44px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.news-logo .horn {
+    float: left;
+    width: 27px;
+    height: 22px;
+    background-image: url("../images/ym-sprites.png");
+    background-repeat: no-repeat;
+    background-size: 512px 1024px;
+    background-position: 0 -184px;
+    margin: 11px 0;
+}
+
+.news-logo .referral {
+    float: left;
+    width: 50px;
+    height: 22px;
+    box-sizing: border-box;
+    border: 2px solid #d33;
+    border-radius: 6px;
+    margin: 11px 0 11px 10px;
+    padding: 4px 0;
+    background: url("../images/ym-sprites.png") no-repeat;
+    background-size: 512px 1024px;
+    background-position: -52.5px -189.5px;
+    background-origin: content-box;
+}
+
+.news-main {
+    float: right;
+    width: 100%;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    padding: 0 15px 0 135px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/*热门推荐*/
+
+.choose {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.choose img {
+    width: 100%;
+}
+
+.choose .title {
+    width: 100%;
+    height: 33px;
+    border-bottom: 1px solid #f2f2f2;
+    position: relative;
+}
+
+.choose-title, .brand-title {
+    width: 68px;
+    height: 33px;
+    margin: 0 auto;
+}
+
+.choose-title i, .brand-title i {
+    display: inline-block;
+    width: 14.5px;
+    height: 15px;
+    margin: 9px 0;
+    background: url("../images/ym-sprites.png") no-repeat;
+    background-size: 512px 1024px;
+    background-position: 0 -144.5px;
+}
+
+.choose-title span, .brand-title span {
+    vertical-align: 12px;
+}
+
+.title .more {
+    position: absolute;
+    height: 33px;
+    right: 15px;
+    top: 0;
+}
+
+.more i {
+    float: right;
+    width: 14px;
+    height: 14px;
+    margin: 9.5px 2px;
+    padding: 3.5px 2px 3.5px 4px;
+    box-sizing: border-box;
+    background: #d33 url("../images/ym-sprites.png") no-repeat;
+    background-size: 512px 1024px;
+    background-position: -76px -148.5px;
+    background-origin: content-box;
+    border-radius: 50%;
+}
+
+.title .more span {
+    line-height: 33px;
+}
+
+.choose .shop {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.shop-left {
+    flex: 1;
+    height: auto;
+    border-right: 1px solid #f0f0f0;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 2px 0 2px #f2f2f2;
+}
+
+.shop-left a {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.shop-right {
+    flex: 2;
+    height: auto;
+}
+
+.r-top {
+    border-bottom: 1px solid #f0f0f0;
+    box-shadow: 0 1px 2px #f2f2f2;
+    box-sizing: border-box;
+}
+
+.r-top a {
+    display: block;
+    width: 100%;
+    height: auto;
+    line-height: 0;
+    font-size: 0;
+    vertical-align: top;
+}
+
+.shop-right div:first-child {
+    width: 100%;
+    height: auto;
+}
+
+.shop-right div:last-child a {
+    float: left;
+    width: 50%;
+    height: auto;
+}
+
+.shop-right div:last-child a:first-child {
+    border-right: 1px solid #f0f0f0;
+    box-shadow: 2px 0 2px #f2f2f2;
+    box-sizing: border-box;
+}
+
+.brand-title i {
+    width: 14px;
+    height: 14px;
+    margin: 9.5px 0;
+    background-position: -39px -145px;
+}
+
+/*推荐品牌*/
+
+.choose .brand {
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 4px 0;
+}
+
+.brand a {
+    width: 32%;
+    height: auto;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 0 2px #eee;
+}
+
+/*没有更多了*/
+.end {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.end i {
+    display: inline-block;
+    width: 14px;
+    height: 17px;
+    background: url("../images/ym-sprites.png") no-repeat;
+    background-size: 512px 1024px;
+    background-position: -107px -143.5px;
+    vertical-align: middle;
+}
+
+.end span {
+    line-height: 30px;
+    color: #999;
+}
+
+/*最下方导航*/
+.entry {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 49px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 -2px 2px #eee;
+}
+
+.entry a {
+    width: 42px;
+    height: auto;
+    padding-top: 10px;
+    color: #333;
+}
+
+.entry a i {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/ym-sprites.png") no-repeat;
+    background-size: 512px 1024px;
+    background-position: 0 -278px;
+    margin: 0 auto;
+}
+
+.entry a.sort i {
+    background-position: -41px -278px;
+}
+
+.entry a.order i {
+    background-position: -82px -278px;
+}
+
+.entry a.user i {
+    background-position: -123px -278px;
+}
+
+.entry a.current p {
+    color: #d33;
+}
+
+.entry a.index.current i {
+    background-position: 0 -237px;
+}
+
+.entry a.sort.current i {
+    background-position: -41px -237px;
+}
+
+.entry a.order.current i {
+    background-position: -82px -237px;
+}
+
+.entry a.user.current i {
+    background-position: -123px -237px;
+}
+
+.entry a p {
+    text-align: center;
+    line-height: 22px;
+}

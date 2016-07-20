@@ -1,0 +1,158 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 44px;
+    text-align: center;
+    box-shadow: 0 2px 2px 2px #f0f0f0;
+    position: fixed;
+    z-index: 100;
+}
+
+.title {
+    width: 100%;
+    height: 44px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+}
+
+.login-back {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: 0;
+}
+
+.login-back i {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url("../../images/ym-sprites.png") no-repeat;
+    background-size: 512px 1024px;
+    background-position: -52px -444px;
+    margin: 11px;
+}
+
+/*µÿ÷∑π‹¿Ì*/
+.address {
+    width: 100%;
+    height: auto;
+    margin: 49px 0 49px 0;
+}
+.address ul{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.address li{
+    width: 100%;
+    height: 110px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.addresstop {
+    width: 100%;
+    height: 72px;
+    border-bottom: 1px solid #f0f0f0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.addressbottom {
+    width: 100%;
+    height: 38.5px;
+    line-height: 38.5px;
+}
+
+.addresstop .name {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.addresstop .name .tel {
+    margin-left: 20px;
+}
+
+.addresstop .detailed {
+    line-height: 21px;
+    height: 42px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    display: box;
+    line-clamo: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+}
+
+.addressbottomleft {
+    float: left;
+}
+
+.addressbottomleft i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../../images/no.gif") no-repeat;
+    background-size: 14px 14px;
+    vertical-align: middle;
+}
+
+.addressbottomleft i.current {
+    background: url("../../images/yes.gif") no-repeat;
+    background-size: 14px 14px;
+}
+
+.addressbottomright {
+    float: right;
+}
+
+.addressbottomright .editor, .addressbottomright .del {
+    color: #333;
+    margin-left: 20px;
+}
+
+.addressbottomright .editor i, .addressbottomright .del i {
+    display: inline-block;
+    width: 11px;
+    height: 12px;
+    background: url("../../images/ym-sprites02.png") no-repeat;
+    background-size: 200px 510px;
+    background-position: 0 -265px;
+    vertical-align: middle;
+}
+.addressbottomright .del i{
+    background-position: -36px -265px;
+}
+.new{
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    background-color: #f33;
+    position: fixed;
+    bottom: 0;
+}
+
+.new a{
+    display: block;
+    color: #fff;
+}

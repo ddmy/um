@@ -1,0 +1,295 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.header {
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    height: 44px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 44px;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    border-bottom: 1px solid #f0f0f0;
+    box-sizing: border-box;
+}
+
+.header a {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    right: 15px;
+    top: 0;
+    color: #666;
+    line-height: 44px;
+    text-align: center;
+}
+
+.place {
+    width: 100%;
+    height: 44px;
+}
+
+.shoping {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 96px;
+}
+
+.shoping > ul > li {
+    width: 100%;
+    height: 132px;
+    background-color: #fff;
+    margin-top: 5px;
+    position: relative;
+}
+
+.shoping .shopleft {
+    width: 130px;
+    height: 132px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+}
+
+.shoping .shopleft a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 16px 15px;
+}
+
+.shoping .shopleft a img {
+    width: 100px;
+    height: 100px;
+}
+
+.shoping .shopleft .select {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: 0px;
+    top: 50%;
+    margin-top: -14px;
+}
+
+.shoping .shopleft .select i {
+    display: block;
+    width: 14px;
+    height: 14px;
+    background:url("../../images/yes.gif") no-repeat;
+    background-size: 14px 14px;
+    margin: 15px auto;
+}
+
+.shoping .shopleft .select i.current {
+    background:url("../../images/no.gif") no-repeat;
+    background-size: 14px 14px;
+}
+
+.shoping .shopright {
+    width: 100%;
+    height: 132px;
+    padding: 0 15px 0 130px;
+    box-sizing: border-box;
+}
+
+.shoping .shopright .name {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    display: box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.shoping .shopright .name a {
+    height: 40px !important;
+    color: #333;
+}
+
+.shoping .shopright .selling {
+    width: 100%;
+    height: 24px;
+    color: #f33;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: right;
+    margin: 5px 0 0 0;
+    font-size: 14px;
+}
+
+.shoping .shopright .price {
+    width: 100%;
+    height: 48px;
+    background-color: #fff;
+    margin-top: 15px;
+    position: relative;
+}
+
+
+.shoping .shopright .price .pricein{
+    color: #f33;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+.shoping .shopright .price .pricenum{
+    position: absolute;
+    width: 92px;
+    height: 30px;
+    background-color: #fff;
+    right: 0;
+    bottom: 4px;
+    border-radius: 16px;
+    border:1px solid #f0f0f0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.shoping .shopright .price .pricenum a,.shoping .shopright .price .pricenum input{
+    float: left;
+    width: 30px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 30px;
+    color: #959595;
+    font-size: 14px;
+}
+.shoping .shopright .price .pricenum input{
+    border: none;
+    border-radius: 0;
+    background-color: #fff;
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+/*最下方导航*/
+.entry {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 49px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 -2px 2px #eee;
+}
+
+.entry a {
+    width: 42px;
+    height: auto;
+    padding-top: 10px;
+    color: #333;
+}
+
+.entry a i {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../../images/ym-sprites.png") no-repeat;
+    background-size: 512px 1024px;
+    background-position: 0 -278px;
+    margin: 0 auto;
+}
+
+.entry a.sort i {
+    background-position: -41px -278px;
+}
+
+.entry a.order i {
+    background-position: -82px -278px;
+}
+
+.entry a.user i {
+    background-position: -123px -278px;
+}
+
+.entry a.current p {
+    color: #d33;
+}
+
+.entry a.index.current i {
+    background-position: 0 -237px;
+}
+
+.entry a.sort.current i {
+    background-position: -41px -237px;
+}
+
+.entry a.order.current i {
+    background-position: -82px -237px;
+}
+
+.entry a.user.current i {
+    background-position: -123px -237px;
+}
+
+
+.entry a p {
+    text-align: center;
+    line-height: 22px;
+}
+
+/*合计*/
+
+.total{
+    position: fixed;
+    bottom: 44px;
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    height: 44px;
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+.totalok{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 44px;
+    background-color: #f33;
+    color: #fff;
+    text-align: center;
+    line-height: 44px;
+}
+.totalin{
+    width: 100%;
+    height: 44px;
+    padding: 0 100px 0 15px;
+    box-sizing: border-box;
+}
+
+.totalin a{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    vertical-align: middle;
+}
+.totalin a i{
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin: 15px;
+    background:url("../../images/yes.gif") no-repeat;
+    background-size: 14px 14px;
+}
+.totalin a i.current{
+    background:url("../../images/no.gif") no-repeat;
+    background-size: 14px 14px;
+}

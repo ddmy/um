@@ -1,0 +1,269 @@
+body {
+    background-color: #f0f0f0;
+}
+.main{
+    overflow: hidden;
+}
+.header {
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 44px;
+    text-align: center;
+    box-shadow: 0 2px 2px 2px #f0f0f0;
+    position: fixed;
+    z-index: 100;
+}
+
+.title {
+    width: 100%;
+    height: 44px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+}
+.title span i{
+    display: inline-block;
+    width: 9px;
+    height: 6px;
+    padding: 7px 5px;
+    background: url("../../images/ym-sprites02.png") no-repeat;
+    background-size: 200px 512px;
+    background-origin: content-box;
+    transition: all 0.5s;
+    vertical-align: middle;
+}
+.title span i.current{
+    transform: rotate(360deg);
+}
+.login-back {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: 0;
+}
+
+.login-back i {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url("../../images/ym-sprites.png") no-repeat;
+    background-size: 512px 1024px;
+    background-position: -52px -444px;
+    margin: 11px;
+}
+
+.allOrder{
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    padding: 0 15px;
+    height: 88px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 2px #f0f0f0;
+    position: fixed;
+    top: 44px;
+    z-index: 10;
+    transition: all 0.5s;
+    transform: translateY(-88px);
+}
+.allorderin{
+    width: 100%;
+}
+.allorderin div{
+    float: left;
+    width: 25%;
+    height: 88px;
+}
+.allorderin div a{
+    display: block;
+    width: 60px;
+    height: 22px;
+    color: #333;
+    background-color: #f0f0f0;
+    border: 2px solid #f0f0f0;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 22px;
+    margin: 33px auto;
+}
+.allorderin div a.current{
+    background-color: #fff;
+    border-color: #f33;
+}
+
+/*订单*/
+.ordering{
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 44px;
+}
+.ordering li{
+    width: 100%;
+    height: 150px;
+    padding: 0 2.5px;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 5px 0;
+    position: relative;
+}
+.ordertop{
+    width: 100%;
+    height: 128px;
+    border-bottom: 1px solid #f0f0f0;
+    box-sizing: border-box;
+    position: relative;
+}
+.orderleft{
+    width: 105px;
+    height: 128px;
+    padding: 14px 2.5px;
+    box-sizing: border-box;
+    position: absolute;
+}
+.orderleft img{
+    width: 100px;
+    height: 100px;
+}
+.orderright{
+    width: 100%;
+    height: 128px;
+    padding: 14px 5px 0 128px;
+    box-sizing: border-box;
+}
+
+.orderright .name{
+    font-size: 14px;
+    height: 22px;
+    line-height: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.orderright .parameter{
+    height: 60px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    display: box;
+    line-clamo: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    color: #999999;
+}
+.orderright .note{
+    margin-top: 4px;
+    height: 20px;
+    color: #999;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.orderbottom{
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    position: relative;
+}
+.orderbottomleft{
+    width: 128px;
+    height: 22px;
+    padding: 0 2.5px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+}
+.orderbottomleft i{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: url("../../images/ym-sprites02.png") no-repeat;
+    background-size: 200px 512px;
+    background-position: 0 -181px;
+    vertical-align: middle;
+}
+.orderbottomleft span:after{
+    content: '订单进行中……';
+}
+.orderbottomright{
+    width: 100%;
+    height: 22px;
+    padding: 0 5px 0  126px;
+    box-sizing: border-box;
+}
+.orderbottomright span{
+    float: left;
+}
+.orderbottomright .price{
+    float: right;
+    color: #f33;
+}
+.ordering li .flag{
+    width: 65px;
+    height: 25px;
+    background: url("../../images/ym-sprites02.png") no-repeat;
+    background-size: 200px 512px;
+    background-position: 0 -31px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+.ordering li.itok .flag{
+    background-position: 0 -81px;
+}
+.ordering li.itok .orderbottomleft i{
+    background-position: -39px -181px;
+}
+.ordering li.itok .orderbottomleft span:after{
+    content: "订单已完成";
+}
+.ordering li.cancel .flag{
+    background-position: 0 -131px;
+}
+.ordering li.cancel .orderbottomleft i{
+    background-position: -78px -181px;
+}
+.ordering li.cancel .orderbottomleft span:after{
+    content: "订单已取消";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

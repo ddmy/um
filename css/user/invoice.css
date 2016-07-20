@@ -1,0 +1,78 @@
+body {
+    background-color: #f0f0f0;
+}
+.main{
+    overflow: hidden;
+}
+.header {
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 44px;
+    text-align: center;
+    box-shadow: 0 2px 2px 2px #f0f0f0;
+    position: fixed;
+    z-index: 100;
+}
+
+.title {
+    width: 100%;
+    height: 44px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+}
+
+.login-back {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: 0;
+}
+
+.login-back i {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url("../../images/ym-sprites.png") no-repeat;
+    background-size: 512px 1024px;
+    background-position: -52px -444px;
+    margin: 11px;
+}
+
+
+.invoice{
+    width: 100%;
+    height: 88px;
+    padding: 0 15px;
+    margin-top: 49px;
+    box-sizing: border-box;
+}
+
+.invoice li{
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.invoice li span{
+    float: left;
+}
+
+.invoice li a{
+    float: right;
+    width: 44px;
+    height: 44px;
+}
+
+.invoice li a i{
+    display: block;
+    width: 4px;
+    height: 7px;
+    margin: 18.5px 0 18.5px 40px;
+}

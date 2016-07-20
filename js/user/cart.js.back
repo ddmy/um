@@ -1,0 +1,230 @@
+/**
+ * Created by Administrator on 2016/7/14.
+ */
+$(function(){
+
+    var urmroCart = {};
+    urmroCart.begin = function(){
+        console.log('重新获取各个节点');
+        //每个商品
+        urmroCart.shops = $('.shoping li');
+        //每个商品选中父盒子
+        urmroCart.selectAll = $('.select');
+        //每个商品右侧
+        urmroCart.shopright = $('.shopright');
+        //每个商品价格
+        urmroCart.shopprice = $('.shopright .pricein');
+        //加
+        urmroCart.shopsub = $('.shopright .sub');
+        //减
+        urmroCart.shopadd = $('.shopright .add');
+        //数量显示
+        urmroCart.shopnums = $('.shopright .nums');
+        //合计价格
+        urmroCart.totalin = $('.totalin span')[0];
+        //编辑
+        urmroCart.editor = $('.editor');
+        //结算删除
+        urmroCart.totalok = $('.totalok');
+        //全选a
+        urmroCart.totalinThis = $('.totalin a');
+        //全选记录
+        urmroCart.flage = true;
+        //价格和计算价格按钮大盒子
+        urmroCart.price = $('.price');
+    };
+
+    urmroCart.begin();
+
+    //计算当前选中的所有总价
+    urmroCart.allCount = function(){
+        //判断在非编辑状态下计算价格
+        if(urmroCart.editor.html() != '完成'){
+            var allCount = 0;
+            urmroCart.shops = $('.shoping li');
+            urmroCart.shops.each(function(i,v){
+                if(v.className == ""){
+                    //获取到所有选中的总价
+                    allCount += Number(urmroCart.shops[i].priceNow);
+                }
+            })
+            urmroCart.totalin.innerHTML = '合计：￥ ' + Number(allCount).toFixed(2);
+        }
+    };
+
+
+    //隐藏显示数量加减器
+    urmroCart.hiddenPrice = function(bel){
+        var flag = bel == true ? 'block' : 'none';
+        urmroCart.price.each(function(i,v){
+            v.querySelector('.pricenum').style.display = flag;
+        })
+    }
+    //编辑状态删除商品
+    urmroCart.removeShop = function(){
+        urmroCart.shops.each(function(i,v){
+            if(v.className != "gothis"){
+                $(v).remove();
+            }
+        })
+    };
+
+    //所有商品数量重设为1
+    urmroCart.aginOne = function(){
+        urmroCart.shopnums.each(function(i,v){
+            v.value = '1';
+            urmroCart.shopprice[i].innerHTML = urmroCart.shops[i].price;
+        })
+    };
+    //清空或选中所有商品状态
+    urmroCart.clearGo = function(name,namecurrent){
+        name = name || '';
+        namecurrent = namecurrent || '';
+        urmroCart.shops = $('.shoping li');
+        urmroCart.selectAll = $('.select');
+        urmroCart.shops.each(function(i,v){
+            v.className = name;
+            urmroCart.selectAll.eq(i).children('i')[0].className = namecurrent;
+        })
+    };
+
+    //重新绑定点击输入计算价格事件。
+    urmroCart.recount = function(){
+        urmroCart.begin();
+        urmroCart.shopsub.each(function(i,v){
+            urmroCart.count(i,v);
+        })
+    };
+
+
+    //商品选中取消
+    urmroCart.selectAll.each(function(i,v){
+        touch.on(v,'tap',function(){
+            $(v).children('i').toggleClass('current');
+            $(urmroCart.shops[i]).toggleClass('gothis')
+            urmroCart.allCount();
+        })
+    })
+
+    //给每个商品绑定价格相关参数
+    //urmroCart.boundPrice = function(){};
+
+    urmroCart.count = function(i,v){
+        //找到当前购物车每个产品单价
+        urmroCart.shopdol = urmroCart.shopprice[i].innerHTML.indexOf('￥') + 1;
+        //把单价绑定到当前父dom节点li上
+        //urmroCart.shops[i].price = parseInt(urmroCart.shopprice[i].innerHTML.substr(urmroCart.shopdol));
+        if(!urmroCart.shops[i].price){
+            urmroCart.shops[i].price = Number(urmroCart.shopprice.eq(i).html().replace(/[\<\>]/g,"=").split('=')[2].replace('￥','')).toFixed(2);
+        }
+        //记录实时价格更新
+        urmroCart.shops[i].priceNow = urmroCart.shops[i].price;
+
+        //手动输入数量
+        urmroCart.shopnums.eq(i).blur(function(){
+
+            var num = $(this).val();
+            //价格赋值
+            urmroCart.shopprice[i].innerHTML = '￥' + Number(urmroCart.shops[i].price * num).toFixed(2);
+            urmroCart.shops[i].priceNow = urmroCart.shops[i].price * num;
+            urmroCart.allCount();
+
+        })
+
+        //点击减号
+        touch.on(v,'tap',function(){
+            //获取对应num当前值
+            var num = urmroCart.shopnums[i].value;
+            num = num == 1 ? 1 : --num;
+
+            //赋值
+            urmroCart.shopnums[i].value = num;
+            //价格赋值
+            urmroCart.shopprice[i].innerHTML = '￥' + Number(urmroCart.shops[i].price * num).toFixed(2);
+            urmroCart.shops[i].priceNow = urmroCart.shops[i].price * num;
+            urmroCart.allCount();
+        });
+
+        //点击加号
+        touch.on(urmroCart.shopadd[i],'tap',function(){
+
+            var num = urmroCart.shopnums[i].value;
+            num ++;
+
+            urmroCart.shopnums[i].value = num;
+            urmroCart.shopprice[i].innerHTML = '￥' + Number(urmroCart.shops[i].price * num).toFixed(2);
+            urmroCart.shops[i].priceNow = urmroCart.shops[i].price * num;
+            urmroCart.allCount();
+
+        })
+
+        urmroCart.allCount();
+
+    };
+
+
+    //开始绑定加减计算价格事件
+    urmroCart.shopsub.each(function(i,v){
+        urmroCart.count(i,v);
+    })
+
+
+    //编辑完成两种状态切换
+    touch.on(urmroCart.editor,'tap',function(){
+        if($(this).html() == '完成'){
+            //这里执行结算页面效果
+            $(this).html('编辑');
+            urmroCart.totalok.html('结算');
+            //显示加减
+            urmroCart.hiddenPrice(true);
+            //取消所有选中
+            urmroCart.clearGo();
+            //计算总价
+            urmroCart.allCount();
+            //重新绑定点击输入计算价格事件
+            urmroCart.recount();
+            //所有数量重设为1
+            urmroCart.aginOne();
+            urmroCart.totalinThis.children('a i').removeClass('current');
+        }else{
+            //这里执行编辑状态页面效果
+            $(this).html('完成');
+            urmroCart.totalin.innerHTML = '全选';
+            urmroCart.totalok.html('删除');
+            urmroCart.hiddenPrice(false);
+            //执行所有选中
+            urmroCart.clearGo('gothis','current');
+            urmroCart.totalinThis.children('a i').addClass('current');
+        }
+    })
+
+    //提交订单和删除商品
+
+    touch.on(urmroCart.totalok,'tap',function(){
+        if($(this).html() != '删除'){
+            //此处提交订单操作
+            //此处提交订单操作
+            //此处提交订单操作
+        }else{
+            //此处删除商品操作
+            urmroCart.removeShop();
+        }
+    })
+
+
+    //全选
+    touch.on(urmroCart.totalinThis,'tap',function(){
+       if(urmroCart.flage == true){
+           //设置全不选
+           urmroCart.clearGo('gothis','current');
+           urmroCart.totalinThis.children('a i').addClass('current');
+           urmroCart.flage = false;
+       }else{
+           //设置全选
+           urmroCart.clearGo();
+           urmroCart.totalinThis.children('a i').removeClass('current');
+           urmroCart.flage = true;
+       }
+        urmroCart.allCount();
+    });
+})
