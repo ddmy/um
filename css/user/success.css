@@ -8,8 +8,8 @@
 
 .hello img{
     display: block;
-    width: 100%;
-    max-width: 300px;
+    width: 50%;
+    max-width: 280px;
     margin: 0 auto;
 }
 .hello p{
