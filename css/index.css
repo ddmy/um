@@ -210,6 +210,19 @@ body {
     text-overflow: ellipsis;
     overflow: hidden;
 }
+.news-main ul{
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+}
+.news-main li{
+    width: 100%;
+    height: 44px;
+}
+
+.news-main li a{
+    color: #333;
+}
 
 /*热门推荐*/
 

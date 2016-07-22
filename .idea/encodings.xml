@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="GBK">
     <file url="file://$PROJECT_DIR$/css/globe.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/index.js" charset="GBK" />
     <file url="file://$PROJECT_DIR$/plug/LArea.js" charset="GBK" />
     <file url="file://$PROJECT_DIR$/plug/LAreaData2.js" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
