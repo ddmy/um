@@ -1,0 +1,19 @@
+.hello{
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 89px 0 40px 0;
+}
+
+.hello img{
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.hello p{
+    text-align: center;
+    font-size: 14px;
+    line-height: 60px;
+}

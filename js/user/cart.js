@@ -177,6 +177,6 @@
         })
         shopJson = JSON.stringify(shopJson);
         console.log(shopJson);
-        //window.location.href = "../user/textOrder.html"
+        window.location.href = "../user/textOrder.html"
     }
 })()
