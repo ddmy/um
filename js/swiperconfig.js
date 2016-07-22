@@ -7,14 +7,13 @@
 var bannerSwiper = new Swiper('.swiper-container',{
     autoplay: 2000,
     loop: true,
-    pagination: '.swiper-pagination',
-    onAutoplay: function(){
-        con();
-    }
+    //onAutoplay: function(){
+    //    con();
+    //}
 });
-function con(){
-    bannerSwiper.activeIndex = bannerSwiper.activeIndex > 5 ? 1 : bannerSwiper.activeIndex;
-}
+//function con(){
+//    bannerSwiper.activeIndex = bannerSwiper.activeIndex > 5 ? 1 : bannerSwiper.activeIndex;
+//}
 
 
 
