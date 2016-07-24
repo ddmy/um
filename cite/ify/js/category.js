@@ -184,4 +184,16 @@ function imgW(){
     aImgs.each(function(i,v){
         v.style.height = aWidth + 'px';
     })
+
+    var bWidth = $('.brand > ul > li > a > img').eq(0)[0].offsetWidth,
+        bHeight = $('.brand > ul > li > a > img').eq(0)[0].offsetHeight,
+        bImahes = $('.brand > ul > li > a > img');
+    
+    setTimeout(function(){
+        bImahes.each(function(i,v){
+            v.style.width = bWidth + 'px';
+            v.style.height = bHeight + 'px';
+        })
+
+    },0)
 }
