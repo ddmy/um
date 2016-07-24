@@ -18,9 +18,12 @@ $(function(){
     var urmroCenter = {};
     urmroCenter.listI = $('.list > ul > li > a > i');
     urmroCenter.bgs = $('.bg > ul > li > i');
+    urmroCenter.listIArr = [2,3,6,7];
 
     urmroCenter.listI.each(function(i,v){
-        v.style.backgroundPositionY = -(129 + (i * (22 + 25))) +"px";
+        if(i < 2){
+            v.style.backgroundPositionY = -(129 + (i * (22 + 25))) +"px";
+        }
     })
 
     urmroCenter.bgs.each(function(i,v){

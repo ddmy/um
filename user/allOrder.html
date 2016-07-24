@@ -10,6 +10,7 @@
     <meta http-equiv="Cache-Control" content="no-cache">
     <title>全部订单</title>
     <link rel="stylesheet" href="../css/globe.css"/>
+    <link rel="stylesheet" href="../plug/swiper.css"/>
     <link rel="stylesheet" href="../css/user/allOrder.css"/>
 </head>
 <body>
@@ -77,21 +78,64 @@
                 </li>
                 <li class="itok">
                     <div class="ordertop">
-                        <div class="orderleft">
+                        <div class="scroll">
+                            <a href="javascript:void(0)">
+                                <img src="http://www.ddamy.com/game/images/dgj-logo.jpg" />
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="http://www.ddamy.com/game/images/dgj-logo.jpg" />
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="http://www.ddamy.com/game/images/dgj-logo.jpg" />
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="http://www.ddamy.com/game/images/dgj-logo.jpg" />
+                            </a>
                             <a href="javascript:void(0)">
                                 <img src="http://www.ddamy.com/game/images/dgj-logo.jpg" />
                             </a>
                         </div>
-                        <div class="orderright">
-                            <p class="name">
-                                WORX威克士 锂电无刷冲击扳手
-                            </p>
-                            <p class="parameter">
-                                型号：WU278    规格：0 - 2700 / 2900 转/分0 - 3000 / 3400 次/分	12.7 毫米 ( 1/2 英寸 )方形
-                            </p>
-                            <p class="note">
-                                备注：请把我的货物送到我房间门口，并且派人抬到我的床旁边。
-                            </p>
+                    </div>
+                    <div class="orderbottom">
+                        <div class="orderbottomleft">
+                            <i></i>
+                            <span></span>
+                        </div>
+                        <div class="orderbottomright">
+                            <span>2016.6.6</span>
+                            <span class="price">
+                                ￥ 1,245,79.00
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="itok">
+                    <div class="ordertop">
+                        <div class="scroll">
+                            <a href="javascript:void(0)">
+                                <img src="http://www.ddamy.com/game/images/dgj-logo.jpg" />
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="http://www.ddamy.com/game/images/dgj-logo.jpg" />
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="http://www.ddamy.com/game/images/dgj-logo.jpg" />
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="http://www.ddamy.com/game/images/dgj-logo.jpg" />
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="http://www.ddamy.com/game/images/dgj-logo.jpg" />
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="http://www.ddamy.com/game/images/dgj-logo.jpg" />
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="http://www.ddamy.com/game/images/dgj-logo.jpg" />
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="http://www.ddamy.com/game/images/dgj-logo.jpg" />
+                            </a>
                         </div>
                     </div>
                     <div class="orderbottom">
@@ -431,8 +475,42 @@
         </div>
     </div>
     <script src="../js/urmro.js"></script>
+    <script src="../js/urmro-fn.js"></script>
     <script src="../plug/jquery.js"></script>
+    <script src="../plug/swiper.jquery.js"></script>
     <script src="../plug/touch.js"></script>
     <script src="../js/user/allOrder.js"></script>
+    <script>
+
+//        $('.swiper-container').each(function(i,v){
+//            sw($(v));
+//        })
+//
+//
+//        function sw(obj){
+//            var mySwiper = new Swiper (obj, {
+//                direction: 'horizontal',
+//                slidesPerView : '1',
+//                freeMode : true,
+//                freeModeMomentum : false,
+//                spaceBetween : 10,
+//                onTouchEnd : function(){
+//                    var jl = $('.scroll').width() - $('.ordertop').width();
+//                    if(Math.abs(mySwiper.translate) >= jl){
+//                        $(obj).children('.swiper-wrapper').css('transition','transform 0.2s');
+//                        $(obj).children('.swiper-wrapper').css('transform','translate3d('+ -jl +'px, 0px, 0px)');
+//                    }
+//                },
+//                onTransitionEnd : function(){
+//                    var jl = $('.scroll').width() - $('.ordertop').width();
+//                    if(Math.abs(mySwiper.translate) >= jl){
+//                        $(obj).children('.swiper-wrapper').css('transition','transform 0.2s');
+//                        $(obj).children('.swiper-wrapper').css('transform','translate3d('+ -jl +'px, 0px, 0px)');
+//                    }
+//                }
+//            })
+//        }
+
+    </script>
 </body>
 </html>

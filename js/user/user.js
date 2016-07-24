@@ -5,23 +5,23 @@
 (function(){
     var urmroUser = {};
 
-    //ç™»å½•é¡µé¢
+    //µÇÂ¼Ò³Ãæ
     urmroUser.mobileVal = document.querySelectorAll('.login-ok input')[0] || null;
     urmroUser.pasdwVal = document.querySelectorAll('.login-ok input')[1] || null;
     urmroUser.loginOk = document.querySelector('.login-login-ok') || null;
 
-    //æ³¨å†Œé¡µé¢
+    //×¢²áÒ³Ãæ
     urmroUser.enrollMobile = document.querySelectorAll('.enroll input')[0] || null;
     urmroUser.enrollCode= document.querySelectorAll('.enroll input')[1] || null;
     urmroUser.enrollPasdw = document.querySelectorAll('.enroll input')[2] || null;
     urmroUser.enrollGainCode = document.querySelector('.gain-code') || null;
     urmroUser.enrollOk = document.querySelector('.enroll-ok') || null;
 
-    //æ­£åˆ™
+    //ÕıÔò
     urmroUser.Rmobile = /^1[3578]\d{9}$/;
     urmroUser.Rpasdw = /^[0-9a-zA-Z]{6,16}$/;
 
-    //å€’è®¡æ—¶è·å–éªŒè¯ç å‡½æ•°
+    //µ¹¼ÆÊ±»ñÈ¡ÑéÖ¤Âëº¯Êı
     urmroUser.GainCodeFlag = true;
     urmroUser.byTime = function(){
         var timer = null,
@@ -36,14 +36,14 @@
                 timer = null;
                 urmroUser.GainCodeFlag = true;
                 num = 10;
-                urmroUser.enrollGainCode.innerHTML = 'è·å–éªŒè¯ç ';
+                urmroUser.enrollGainCode.innerHTML = '»ñÈ¡ÑéÖ¤Âë';
             }
         },1000)
     };
 
     urmroUser.gainCode = function(){
         if(!urmroUser.Rmobile.test(urmroUser.enrollMobile.value)){
-            alert('æ‚¨è¾“å…¥çš„æ‰‹æœºå·æœ‰è¯¯');
+            alert('ÄúÊäÈëµÄÊÖ»úºÅÓĞÎó');
             urmroUser.enrollMobile.value = '';
             return false;
         }else{
@@ -52,26 +52,26 @@
     };
 
 
-    //ç™»å½•æ£€æµ‹
+    //µÇÂ¼¼ì²â
     if(urmroUser.loginOk){
         touch.on(urmroUser.loginOk,'tap',function(){
             var hint = '';
             if(!urmroUser.Rmobile.test(urmroUser.mobileVal.value)){
-                hint = 'æ‚¨è¾“å…¥çš„æ‰‹æœºå·æœ‰è¯¯ ';
+                hint = 'ÄúÊäÈëµÄÊÖ»úºÅÓĞÎó ';
                 urmroUser.mobileVal.value = '';
             }
             if(!urmroUser.Rpasdw.test(urmroUser.pasdwVal.value)){
-                hint += 'å¯†ç é™åˆ¶ä¸º6åˆ°16ä½æ•°å­—å­—ç¬¦';
+                hint += 'ÃÜÂëÏŞÖÆÎª6µ½16Î»Êı×Ö×Ö·û';
                 urmroUser.pasdwVal.value = '';
             }
             if(hint != ''){
-                alert(hint + ',è¯·æ‚¨é‡æ–°è¾“å…¥');
+                alert(hint + ',ÇëÄúÖØĞÂÊäÈë');
                 return false;
             }
         })
     }
 
-    //æ³¨å†Œæ£€æµ‹
+    //×¢²á¼ì²â
     if(urmroUser.enrollOk){
 
         touch.on(urmroUser.enrollGainCode,'tap',urmroUser.gainCode);
@@ -79,17 +79,17 @@
         touch.on(urmroUser.enrollOk,'tap',function(){
             var hint = '';
             if(!urmroUser.Rmobile.test(urmroUser.enrollMobile.value)){
-                hint = 'æ‚¨è¾“å…¥çš„æ‰‹æœºå·æœ‰è¯¯';
+                hint = 'ÄúÊäÈëµÄÊÖ»úºÅÓĞÎó';
                 urmroUser.enrollMobile.value = '';
             }
             if(!urmroUser.Rpasdw.test(urmroUser.enrollPasdw.value)){
-                hint = ' å¯†ç é™åˆ¶ä¸º6åˆ°16ä½æ•°å­—å­—ç¬¦ï¼Œæ‚¨è¾“å…¥çš„ä¸æ­£ç¡®';
+                hint = ' ÃÜÂëÏŞÖÆÎª6µ½16Î»Êı×Ö×Ö·û£¬ÄúÊäÈëµÄ²»ÕıÈ·';
                 urmroUser.enrollPasdw = '';
             }
             if(hint != ""){
-                alert(hint + ',è¯·æ‚¨é‡æ–°è¾“å…¥');
-                return false;
+                alert(hint + ',ÇëÄúÖØĞÂÊäÈë');
             }
+            return false;
         });
     }
 

@@ -1,9 +1,11 @@
 body {
     background-color: #f0f0f0;
 }
-.main{
+
+.main {
     overflow: hidden;
 }
+
 .header {
     width: 100%;
     max-width: 640px;
@@ -25,7 +27,8 @@ body {
     background-color: #fff;
     position: relative;
 }
-.title span i{
+
+.title span i {
     display: inline-block;
     width: 9px;
     height: 6px;
@@ -36,9 +39,11 @@ body {
     transition: all 0.5s;
     vertical-align: middle;
 }
-.title span i.current{
+
+.title span i.current {
     transform: rotate(360deg);
 }
+
 .login-back {
     position: absolute;
     width: 44px;
@@ -56,7 +61,7 @@ body {
     margin: 11px;
 }
 
-.allOrder{
+.allOrder {
     width: 100%;
     max-width: 640px;
     min-width: 300px;
@@ -71,15 +76,18 @@ body {
     transition: all 0.5s;
     transform: translateY(-88px);
 }
-.allorderin{
+
+.allorderin {
     width: 100%;
 }
-.allorderin div{
+
+.allorderin div {
     float: left;
     width: 25%;
     height: 88px;
 }
-.allorderin div a{
+
+.allorderin div a {
     display: block;
     width: 60px;
     height: 22px;
@@ -91,13 +99,14 @@ body {
     line-height: 22px;
     margin: 33px auto;
 }
-.allorderin div a.current{
+
+.allorderin div a.current {
     background-color: #fff;
     border-color: #f33;
 }
 
 /*订单*/
-.ordering{
+.ordering {
     width: 100%;
     height: auto;
     padding: 0 10px;
@@ -105,7 +114,8 @@ body {
     box-sizing: border-box;
     margin-top: 44px;
 }
-.ordering li{
+
+.ordering li {
     width: 100%;
     height: 150px;
     padding: 0 2.5px;
@@ -114,32 +124,51 @@ body {
     margin: 5px 0;
     position: relative;
 }
-.ordertop{
+
+.ordertop {
     width: 100%;
     height: 128px;
     border-bottom: 1px solid #f0f0f0;
     box-sizing: border-box;
     position: relative;
+    overflow: hidden;
 }
-.orderleft{
+
+.orderleft {
     width: 105px;
     height: 128px;
     padding: 14px 2.5px;
     box-sizing: border-box;
     position: absolute;
 }
-.orderleft img{
+
+.ordertop .scroll {
+    width: auto;
+    min-width: 100%;
+    height: 100px;
+    margin: 14px 2.5px;
+}
+
+.scroll a{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.ordertop img {
     width: 100px;
     height: 100px;
 }
-.orderright{
+
+.orderright {
     width: 100%;
     height: 128px;
     padding: 14px 5px 0 128px;
     box-sizing: border-box;
 }
 
-.orderright .name{
+.orderright .name {
     font-size: 14px;
     height: 22px;
     line-height: 14px;
@@ -147,7 +176,8 @@ body {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.orderright .parameter{
+
+.orderright .parameter {
     height: 60px;
     line-height: 20px;
     overflow: hidden;
@@ -160,7 +190,8 @@ body {
     word-break: break-word;
     color: #999999;
 }
-.orderright .note{
+
+.orderright .note {
     margin-top: 4px;
     height: 20px;
     color: #999;
@@ -169,13 +200,15 @@ body {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.orderbottom{
+
+.orderbottom {
     width: 100%;
     height: 22px;
     line-height: 22px;
     position: relative;
 }
-.orderbottomleft{
+
+.orderbottomleft {
     width: 128px;
     height: 22px;
     padding: 0 2.5px;
@@ -183,7 +216,8 @@ body {
     position: absolute;
     left: 0;
 }
-.orderbottomleft i{
+
+.orderbottomleft i {
     display: inline-block;
     width: 14px;
     height: 14px;
@@ -193,23 +227,28 @@ body {
     background-position: 0 -181px;
     vertical-align: middle;
 }
-.orderbottomleft span:after{
+
+.orderbottomleft span:after {
     content: '订单进行中……';
 }
-.orderbottomright{
+
+.orderbottomright {
     width: 100%;
     height: 22px;
-    padding: 0 5px 0  126px;
+    padding: 0 5px 0 126px;
     box-sizing: border-box;
 }
-.orderbottomright span{
+
+.orderbottomright span {
     float: left;
 }
-.orderbottomright .price{
+
+.orderbottomright .price {
     float: right;
     color: #f33;
 }
-.ordering li .flag{
+
+.ordering li .flag {
     width: 65px;
     height: 25px;
     background: url("../../images/ym-sprites02.png") no-repeat;
@@ -220,27 +259,34 @@ body {
     right: 0;
 }
 
-
-
-.ordering li.itok .flag{
+.ordering li.itok .flag {
     background-position: 0 -81px;
 }
-.ordering li.itok .orderbottomleft i{
+
+.ordering li.itok .orderbottomleft i {
     background-position: -39px -181px;
 }
-.ordering li.itok .orderbottomleft span:after{
+
+.ordering li.itok .orderbottomleft span:after {
     content: "订单已完成";
 }
-.ordering li.cancel .flag{
+
+.ordering li.cancel .flag {
     background-position: 0 -131px;
 }
-.ordering li.cancel .orderbottomleft i{
+
+.ordering li.cancel .orderbottomleft i {
     background-position: -78px -181px;
 }
-.ordering li.cancel .orderbottomleft span:after{
+
+.ordering li.cancel .orderbottomleft span:after {
     content: "订单已取消";
 }
 
+
+.swiper-slide{
+    width: 100px;
+}
 
 
 

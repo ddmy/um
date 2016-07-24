@@ -10,19 +10,19 @@ urmro = (function () {
     urmro.historyBack = document.querySelector('.login-back') || null;
 
 
-    //ç¦æ­¢é¡µé¢é€‰ä¸­æ“ä½œ
+    //½ûÖ¹Ò³ÃæÑ¡ÖĞ²Ù×÷
     document.body.onselectstart = document.body.oncontextmenu = function () {
         return false;
     }
-    //éç§»åŠ¨ç«¯æµè§ˆå¤„ç†å‡½æ•°
+    //·ÇÒÆ¶¯¶Ëä¯ÀÀ´¦Àíº¯Êı
     urmro.notMobile = function () {
         var div = document.createElement('div');
-        div.innerHTML = 'æ‚¨çš„æµè§ˆå™¨ä¸æ”¯æŒï¼Œè¯·æ‚¨åœ¨ç§»åŠ¨ç«¯æµè§ˆã€‚';
+        div.innerHTML = 'ÄúµÄä¯ÀÀÆ÷²»Ö§³Ö£¬ÇëÄúÔÚÒÆ¶¯¶Ëä¯ÀÀ¡£';
         div.className = 'notmobile';
         document.body.appendChild(div);
     };
 
-    //æ£€æµ‹æ˜¯å¦ä¸ºç§»åŠ¨ç«¯
+    //¼ì²âÊÇ·ñÎªÒÆ¶¯¶Ë
     for (var i = 0; i < urmro.Agents.length; i += 1) {
         if (urmro.userAgentInfo.indexOf(urmro.Agents[i]) > 0) {
             urmro.mobile = true;
@@ -33,7 +33,7 @@ urmro = (function () {
         //window.location.href = 'http://www.urmro.com';
     }
 
-    //é¡µé¢åé€€
+    //Ò³ÃæºóÍË
     if(urmro.historyBack){
         urmro.historyBack.addEventListener('click',function(){
             history.back(-1);

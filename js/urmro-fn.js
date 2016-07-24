@@ -9,7 +9,7 @@ urmro.goArray = function(arr){
     var newarr = [];
     if(arr instanceof Array){
         newarr = arr;
-    }else if(arr.length > 1){
+    }else if(arr.length > 0){
         for(var i = 0; i < arr.length; i += 1){
             newarr.push(arr[i]);
         }
@@ -96,4 +96,34 @@ urmro.allClass = function(obj){
             elm[i].className = controlName[0];
         }
     }
+}
+
+
+
+
+urmro.touch = function(obj,type,callback){
+
+    var obj = urmro.goArray(obj);
+
+    obj.forEach(function(v,i){
+        if(type == 'tstart'){
+            v.addEventListener('touchstart',function(event){
+                var event = event || window.event;
+                callback && callback(event);
+            })
+        }
+        if(type == 'tmove'){
+            v.addEventListener('touchmove',function(event){
+                var event = event || window.event;
+                callback && callback(event);
+            })
+        }
+
+        if(type == 'tend'){
+            v.addEventListener('touchend',function(event){
+                var event = event || window.event;
+                callback && callback(event);
+            })
+        }
+    })
 }
