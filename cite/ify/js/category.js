@@ -142,7 +142,7 @@ function leftSwipe(event){
             setTranslateY(currY);
         }
 
-
+        imgW();
 
     });
 
@@ -173,9 +173,15 @@ $(function(){
     });
 
     //处理特殊图片
+   imgW();
+})
+
+
+function imgW(){
+    //处理特殊图片
     var aWidth = $('.shoping > ul > li > a').width(),
         aImgs = $('.shoping > ul > li > a > img');
     aImgs.each(function(i,v){
         v.style.height = aWidth + 'px';
     })
-})
+}
