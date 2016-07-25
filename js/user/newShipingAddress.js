@@ -11,3 +11,11 @@ $('select').each(function(i,v){
         $('.master').eq(i).html($(v).find("option:selected").text());
     }
 })
+
+function selectDiv(){
+    $('select').each(function(i,v){
+        $('.master').eq(i).html($(v).find("option:selected").text());
+    })
+}
+
+selectDiv();
