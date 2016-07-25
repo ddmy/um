@@ -30,7 +30,7 @@ urmro = (function () {
         }
     }
     if (!urmro.mobile) {
-        //window.location.href = 'http://www.urmro.com';
+        window.location.href = 'http://www.urmro.com';
     }
 
     //Ò³ÃæºóÍË

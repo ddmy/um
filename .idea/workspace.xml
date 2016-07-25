@@ -2,37 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61523123-f548-4a28-aa9a-a9f8d3a0a09d" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ym-sprites.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plug/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plug/touch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plug/swiper.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/user/enroll.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/user/login.css" />
+      <change type="NEW" beforePath="" afterPath="D:\www\vip\urmro\images\3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plug/swiper.jquery.min.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/globe.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/user/enroll.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/urmro-fn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/user/enroll.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/index-swiper.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/swiperconfig.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/user/enroll.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/user/login.css" />
-      <change type="NEW" beforePath="" afterPath="D:\www\vip\urmro\images\2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/user/user.js" />
-      <change type="NEW" beforePath="" afterPath="D:\www\vip\urmro\images\1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/globe.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/urmro-fn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/urmro.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/index.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/urmro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/user/login.html" />
-      <change type="NEW" beforePath="" afterPath="D:\www\vip\urmro\images\3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plug/swiper.jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plug/swiper.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plug/swiper.min.css" />
+      <change type="NEW" beforePath="" afterPath="D:\www\vip\urmro\images\2.jpg" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plug/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="D:\www\vip\urmro\images\4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ym-sprites.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/swiperconfig.js" />
+      <change type="NEW" beforePath="" afterPath="D:\www\vip\urmro\images\1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/urmro.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plug/touch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/user/user.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/user/enroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plug/swiper.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plug/swiper.jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/user/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plug/swiper.jquery.js" />
+      <change type="NEW" beforePath="" afterPath="D:\www\vip\urmro\images\4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plug/jquery.js" />
     </list>
     <ignored path="urmro.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,7 +56,7 @@
       <file leaf-file-name="category.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cite/ify/category.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.793104">
+            <state vertical-scroll-proportion="0.0">
               <caret line="203" column="25" selection-start-line="203" selection-start-column="25" selection-end-line="203" selection-end-column="25" />
               <folding />
             </state>
@@ -66,11 +66,31 @@
       <file leaf-file-name="category.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cite/ify/js/category.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72960895">
-              <caret line="190" column="4" selection-start-line="190" selection-start-column="4" selection-end-line="190" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.6558659">
+              <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
               <folding>
                 <element signature="n#!!block;n#swipeRight#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.620689">
+              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urmro.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/urmro.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,7 +148,6 @@
         <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/cite/ify/category.html" />
         <option value="$PROJECT_DIR$/js/swiperconfig.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/user/cart.js" />
         <option value="$PROJECT_DIR$/user/textOrder.html" />
         <option value="$PROJECT_DIR$/js/user/textOrder.js" />
@@ -140,7 +159,6 @@
         <option value="$PROJECT_DIR$/css/user/success.css" />
         <option value="$PROJECT_DIR$/user/success.html" />
         <option value="$PROJECT_DIR$/js/user/user.js" />
-        <option value="$PROJECT_DIR$/js/urmro.js" />
         <option value="$PROJECT_DIR$/js/urmro-fn.js" />
         <option value="$PROJECT_DIR$/css/user/allOrder.css" />
         <option value="$PROJECT_DIR$/user/allOrder.html" />
@@ -153,6 +171,8 @@
         <option value="$PROJECT_DIR$/css/user/center.css" />
         <option value="$PROJECT_DIR$/cite/ify/css/category.css" />
         <option value="$PROJECT_DIR$/cite/ify/js/category.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/urmro.js" />
       </list>
     </option>
   </component>
@@ -198,6 +218,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -382,7 +403,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -457,24 +477,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1930" height="1056" extended-state="0" />
+    <frame x="-8" y="0" width="1930" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15856236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497349" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -663,13 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.448277">
-          <caret line="141" column="46" selection-start-line="141" selection-start-column="46" selection-end-line="141" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/user/textOrder.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -742,13 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/urmro.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85251397">
-          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -838,7 +844,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cite/ify/category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.793104">
+        <state vertical-scroll-proportion="0.0">
           <caret line="203" column="25" selection-start-line="203" selection-start-column="25" selection-end-line="203" selection-end-column="25" />
           <folding />
         </state>
@@ -852,10 +858,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/urmro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.620689">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cite/ify/js/category.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72960895">
-          <caret line="190" column="4" selection-start-line="190" selection-start-column="4" selection-end-line="190" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.6558659">
+          <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#swipeRight#0" expanded="false" />
           </folding>

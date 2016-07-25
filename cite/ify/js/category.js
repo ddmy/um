@@ -188,7 +188,7 @@ function imgW(){
     var bWidth = $('.brand > ul > li > a > img').eq(0)[0].offsetWidth,
         bHeight = $('.brand > ul > li > a > img').eq(0)[0].offsetHeight,
         bImahes = $('.brand > ul > li > a > img');
-    
+
     setTimeout(function(){
         bImahes.each(function(i,v){
             v.style.width = bWidth + 'px';
