@@ -25,6 +25,6 @@
     function submitOrder(num,time){
         alert('提交成功');
         console.log(num + '---' + time);
-        window.location.href = 'success.html';
+        window.location.href = 'okpay.html';
     }
 })()
