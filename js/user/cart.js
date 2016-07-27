@@ -179,4 +179,6 @@
         console.log(shopJson);
         window.location.href = "../user/textOrder.html"
     }
+
 })()
+

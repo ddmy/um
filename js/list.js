@@ -9,6 +9,8 @@
     urmroList.windowHeight = window.screen.availHeight || null;
     urmroList.elemGoTop = document.querySelector('.gotop');
     urmroList.cart = document.querySelectorAll('.main a i') || null;
+    urmroList.cartnum = document.querySelector('.cartnum') || null;
+    urmroList.cartNum = urmroList.cartnum.innerHTML || 0;
     //¥Û–°Õº«–ªª
     touch.on(urmroList.togglerList,'tap',function(){
         if(urmroList.togglerList.className == 'list-login'){
@@ -54,6 +56,7 @@
                 if(flag){
                     that.className = 'add';
                     flag = false;
+                    urmroList.cartnum.innerHTML = ++ urmroList.cartNum;
                     setTimeout(function(){
                         that.className = '';
                         flag = true;

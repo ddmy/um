@@ -176,8 +176,6 @@ body{
     width: 110px;
     height: 44px;
     position: absolute;
-    left: 15;
-    top: 0;
 }
 .cart .left a{
     float: left;
@@ -199,12 +197,13 @@ body{
     height: 21px;
     background: url("../images/ym-sprites02.png") no-repeat;
     background-size: 200px 512px;
-    background-position: 0 -220px;
+    background-position: -47px -220px;
     margin: 4px auto 0;
 }
 
-.cart .left a:last-child i{
-    background-position: -47px -220px;
+.cart .left a:first-child i{
+    background: url("../images/cartone.png") no-repeat;
+    background-size: 22px 21px;
 }
 .cart .right{
     width: 100%;
@@ -223,4 +222,14 @@ body{
 }
 .cart .right a:last-child{
     background-color: #dd3333;
+}
+
+.cart .left .cartnum{
+    position: absolute;
+    padding: 0 4px;
+    background-color: #f33;
+    color: #fff;
+    border-radius: 50%;
+    top: -8px;
+    left: 36px;
 }

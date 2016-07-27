@@ -159,10 +159,11 @@ function swipeRight(){
 }
 
 $(function(){
+
     touch.on($(document),'drag',function(event){
         if(event.direction == 'up'){
             $('.entry').stop().animate({
-                'bottom':'-44px'
+                'bottom':'-50px'
             })
         }
         if(event.direction == 'down'){

@@ -127,7 +127,6 @@ $(function(){
 
             childDom.addEventListener('touchstart',function(e){
                 startY = e.touches[0].clientX;
-                e.preventDefault();
 
             });
             childDom.addEventListener('touchmove',function(e){

@@ -197,6 +197,10 @@ body {
     color: #333;
 }
 
+.entry a.order{
+    position: relative;
+}
+
 .entry a i {
     display: block;
     width: 16px;
@@ -243,6 +247,16 @@ body {
 .entry a p {
     text-align: center;
     line-height: 22px;
+}
+
+.entry a.order .cartnum{
+    position: absolute;
+    padding: 0 4px;
+    background-color: #f33;
+    color: #fff;
+    right: 0;
+    top: 0;
+    border-radius: 50%;
 }
 
 /*ºÏ¼Æ*/
