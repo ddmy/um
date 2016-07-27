@@ -32,13 +32,13 @@ $(function(){
                 $('.allorderin div a').removeClass('current');
                 $(this).addClass('current');
                 $('.ordering li').css('display','none');
-                $('.ordering .ongoing').css('display','block');
+                $('.ordering .nopay').css('display','block');
                 break;
             case 'ok':
                 $('.allorderin div a').removeClass('current');
                 $(this).addClass('current');
                 $('.ordering li').css('display','none');
-                $('.ordering .itok').css('display','block');
+                $('.ordering .ongoing,.ordering .itok,.ordering .send').css('display','block');
                 break;
             case 'no':
                 $('.allorderin div a').removeClass('current');

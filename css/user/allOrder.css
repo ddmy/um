@@ -229,7 +229,7 @@ body {
 }
 
 .orderbottomleft span:after {
-    content: '订单进行中……';
+    content: '待发货';
 }
 
 .orderbottomright {
@@ -268,7 +268,7 @@ body {
 }
 
 .ordering li.itok .orderbottomleft span:after {
-    content: "订单已完成";
+    content: "已完成";
 }
 
 .ordering li.cancel .flag {
@@ -280,9 +280,15 @@ body {
 }
 
 .ordering li.cancel .orderbottomleft span:after {
-    content: "订单已取消";
+    content: "已取消";
 }
 
+.ordering li.nopay .orderbottomleft span:after{
+    content: "待付款";
+}
+.ordering li.send .orderbottomleft span:after{
+    content: "已发货";
+}
 
 .swiper-slide{
     width: 100px;
