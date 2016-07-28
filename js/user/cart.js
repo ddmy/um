@@ -55,7 +55,7 @@
 
                         prices += urmro.htmlToFixed(v,2) * nums[i].value;
 
-                        pricein[i].innerHTML = 'гд' + urmro.htmlToFixed(v,2) * nums[i].value;
+                        pricein[i].innerHTML = 'гд' + (urmro.htmlToFixed(v,2) * nums[i].value).toFixed(2);
 
                     }
                 }
@@ -93,13 +93,20 @@
 
         var cartnumval = flag ? Number(cartnum.innerHTML) || 0 : 0;
 
-        $('.nums').each(function(i,v){
+        if(!flag){
 
-            cartnumval += Number(v.value);
+            $('.nums').each(function(i,v){
 
-        })
+                cartnumval += Number(v.value);
 
-        cartnum.innerHTML = cartnumval;
+            })
+
+        }
+        if(cartnumval > 0){
+
+            cartnum.innerHTML = cartnumval;
+
+        }
     }
 
     allShopNum(true);
