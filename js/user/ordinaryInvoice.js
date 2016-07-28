@@ -15,6 +15,7 @@ $(function(){
     }
 
     function vat(){
+        $('title').html('增值税发票');
         $('.title span').html('增值税发票');
         $('.new a').html('新增增值税发票');
         $('.new a').attr('href','addTheVatInvoice.html');

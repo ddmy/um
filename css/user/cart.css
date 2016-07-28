@@ -188,6 +188,7 @@ body {
     display: flex;
     justify-content: space-around;
     box-shadow: 0 -2px 2px #eee;
+    z-index: 100;
 }
 
 .entry a {
