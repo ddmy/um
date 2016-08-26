@@ -199,6 +199,7 @@
             for(var j = 0; j < allShop.length; j += 1){
                 if(!$(allShop[j]).hasClass('gothis')){
                     $(allShop[j]).remove();
+                    shopRemove();
                 }
             }
         }
@@ -233,6 +234,13 @@
         shopJson = JSON.stringify(shopJson);
         console.log(shopJson);
         window.location.href = "../user/textOrder.html";
+    }
+
+
+    function shopRemove(){
+
+        //É¾³ýÉÌÆ·
+        
     }
 
 })()

@@ -39,6 +39,5 @@ urmro = (function () {
             history.back(-1);
         })
     }
-
     return urmro;
 })();
