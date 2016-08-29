@@ -199,9 +199,9 @@
             for(var j = 0; j < allShop.length; j += 1){
                 if(!$(allShop[j]).hasClass('gothis')){
                     $(allShop[j]).remove();
-                    shopRemove();
                 }
             }
+            shopRemove();
         }
     })
 
@@ -240,7 +240,8 @@
     function shopRemove(){
 
         //É¾³ýÉÌÆ·
-        
+
+        alert('É¾³ý');
     }
 
 })()

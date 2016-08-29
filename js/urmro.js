@@ -9,7 +9,6 @@ urmro = (function () {
     urmro.Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
     urmro.historyBack = document.querySelector('.login-back') || null;
 
-
     //禁止页面选中操作
     document.body.onselectstart = document.body.oncontextmenu = function () {
         return false;
@@ -32,6 +31,20 @@ urmro = (function () {
     if (!urmro.mobile) {
         window.location.href = 'http://www.urmro.com';
     }
+
+
+    // 对浏览器的UserAgent进行正则匹配，不含有微信独有标识的则为其他浏览器
+    urmro.useragent = navigator.userAgent;
+    if (urmro.useragent.match(/MicroMessenger/i) != 'MicroMessenger') {
+        document.body.innerHTML = "";
+        // 这里警告框会阻塞当前页面继续加载
+        alert('已禁止本次访问：您必须使用微信内置浏览器访问本页面！');
+        // 以下代码是用javascript强行关闭当前页面
+        var opened = window.open('about:blank', '_self');
+        opened.opener = null;
+        opened.close();
+    }
+
 
     //页面后退
     if(urmro.historyBack){
