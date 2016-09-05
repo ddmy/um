@@ -79,13 +79,12 @@ table {
     width: 100%;
     height: 49px;
     background-color: #fff;
-    display: flex;
-    justify-content: space-around;
     box-shadow: 0 -2px 2px #eee;
 }
 
 .entry a {
-    width: 42px;
+    float: left;
+    width: 25%;
     height: auto;
     padding-top: 10px;
     color: #333;
